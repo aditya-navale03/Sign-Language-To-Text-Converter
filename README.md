@@ -1,3 +1,5 @@
+# Live Site: https://sign-language-converter.vercel.app/
+
 # Sign Language Translator
 
 A real-time sign language translator that uses computer vision to interpret sign language and display the translated text.

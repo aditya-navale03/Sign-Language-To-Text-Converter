@@ -10,7 +10,7 @@ import importlib
 # CONFIGURATION
 # -------------------------
 # List the letters you want to support
-LETTERS = ["A", "B"]
+LETTERS = ["A", "B", "C"]
 
 # Dynamically import left and right hand logic for each letter
 # This creates a dictionary for easy access later
