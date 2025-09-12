@@ -73,15 +73,35 @@ A real-time sign language translator that uses computer vision to interpret sign
 
 ```
 sign-language-converter/
-├── Frontend/               # React frontend
-│   ├── public/             # Static files
-│   └── src/                # React source code
-│       ├── App.js          # Main React component
-│       └── App.css         # Styling
-├── PythonBackend/          # Python backend
-│   ├── app.py             # Flask server and image processing
-│   └── requirements.txt    # Python dependencies
-└── README.md              # This file
+├── Frontend/                   # React frontend
+│   ├── public/                # Static files
+│   │   ├── favicon.ico        # Favicon
+│   │   ├── index.html         # Main HTML template
+│   │   ├── logo192.png        # App logo
+│   │   └── manifest.json      # Web app manifest
+│   └── src/                   # React source code
+│       ├── App.js             # Main React component
+│       ├── App.css            # Main styles
+│       ├── App.test.js        # Test file for App component
+│       ├── index.js           # Application entry point
+│       ├── index.css          # Global styles
+│       └── reportWebVitals.js # Performance monitoring
+│
+├── PythonBackend/             # Python backend
+│   ├── Hands/                # Training data for sign language gestures
+│   │   ├── A/               # Letter A gestures
+│   │   │   ├── left.py      # Left hand data for A
+│   │   │   └── right.py     # Right hand data for A
+│   │   ├── B/               # Letter B gestures
+│   │   └── ...              # Other letters
+│   │
+│   ├── app.py               # Flask server and image processing
+│   ├── ws_server.py         # WebSocket server for real-time communication
+│   └── requirements.txt     # Python dependencies
+│
+├── .gitignore               # Git ignore file
+├── package.json             # Frontend dependencies
+└── README.md                # Project documentation
 ```
 
 ## Technologies Used
